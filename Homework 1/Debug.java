@@ -17,12 +17,16 @@ public class Debug {
 
         //finish this one for me by receiving and printing the user's age back to them
         System.out.println("How old are you? ");
+        Integer age = sc.nextInt();
+        System.out.println("I am " + age + " years old");
 
 
         //can you do some math for me? take these variable and print out the sum of them!
         int num1 = 10;
         int num2 = 37;
         //?
+        System.out.println( num1 + num2);
+
 
         
 
