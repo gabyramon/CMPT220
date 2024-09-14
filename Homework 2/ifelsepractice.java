@@ -8,8 +8,38 @@ import java.util.Scanner;
 * can be any topic you pick :) feel free to pick some obscure or niche topics!
 * good luck!
 * */
-public class Main {
+public class ifelsepractice {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("What is the capital of New York? ");
+        String capital = sc.nextLine();
+
+         if (capital.equals("Albany")){
+            System.out.println("You are correct! 1 point.");
+         }else {
+            System.out.println("Wrong, try again. 0 points");
+         }
+
+         System.out.println("What is the capital of Maine? ");
+         String Mcapital = sc.nextLine();
+
+         if (Mcapital.equals("Augusta")){
+            System.out.println("You are correct! 2 points.");
+         }else {
+            System.out.println("Wrong, try again");
+         }
+
+         System.out.println("What is the capital of Kansas? ");
+         String Kcapital = sc.nextLine();
+
+         if (Kcapital.equals("Topeka")){
+            System.out.println("You are correct! 3 points.");
+         }else {
+            System.out.println("Wrong, try again");
+         }
+
+         System.out.println("Thank you for playing! ");
 
 
 
