@@ -16,7 +16,7 @@ public class LoopsDebug {
         //(factorial = X!, X being the user input, Factorials are every digit before X multiplied together)
         System.out.println("Problem 2");
         System.out.println("Enter a number and I will tell you the fatorial: ");
-       /*  Integer num = sc.nextInt();
+       /* Integer num = sc.nextInt();
         int factorial = 1;
         //here's a hint
         for (int i = 1; i <= num ; i++){
