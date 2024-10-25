@@ -12,11 +12,11 @@ I give you two fully working method examples with and without parameters and cal
 */
 
 import java.util.Scanner;
-public class Main {
+public class debugFunctions {
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
-
+    
     System.out.println("Enter your first number to be added");
     int firstInput = sc.nextInt();
     System.out.println("Enter your second number to be added");
@@ -26,22 +26,61 @@ public class Main {
 
     System.out.println("im going to print out the word Dog now.");
     printDog();
+
+    System.out.println("Problem 2");
+    System.out.println("Enter a number and I will tell you the fatorial: ");
+    Integer numInput = sc.nextInt();
+    System.out.println(factorial(numInput));
+
+    System.out.println("Problem 3");
+    System.out.println("Enter a number and I will tell you the sum of every other number: ");
+    int sumNum = sc.nextInt();
+    System.out.println(printSum(sumNum)); 
+
+    System.out.println("Problem 5");
+    System.out.println("Enter a string: ");
+    String stringInput = sc.nextLine();
+    System.out.println(Reverse(stringInput));
       
     }
 
-  
+    //reference method 1
     public static int add(int zyx, int tuv){
-
-
         return(zyx + tuv);
-
-
     }
 
-  
+    //reference method 2
     public static void printDog(){
         System.out.println("Dog");
     }
 
-  
+    //factorial method
+    public static int factorial(int num){
+        int factorial = 1;
+        for (int i = 1; i <= num ; i++){
+            factorial = factorial*i;
+        }
+        return factorial;
+    }
+
+    //sum of every other num method 
+    public static int printSum(int xyz){
+        int sum = 0;
+        for(int i = 1; i<=xyz; i+=2){
+            sum = sum + i;
+        }
+        return sum;  
+    }
+
+    //reverse string method
+    public static String Reverse(String word){
+        String reverse = "";
+        for(int i = 0;i < word.length(); i++){
+            reverse = word.charAt(i) + reverse;
+        }
+        return reverse;
+    }
+
+
+
 }
