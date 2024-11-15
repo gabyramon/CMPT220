@@ -20,8 +20,22 @@ public class student{
     }
     
     //new method
-
+    void honorRoll(){
+        if(this.gpa > 3.6){
+            System.out.println(name + " is a honors roll student.");
+        } else{
+            System.out.println(name + " is not a honors roll student.");
+        }
+    }
+    
     
     //new method
+    void freeLunch(){
+        if(this.id == 2345){
+            System.out.println("You get a free lunch!!");
+        } else{
+            System.out.println("You don't get a free lunch :(");
+        }
+    }
 
 }
